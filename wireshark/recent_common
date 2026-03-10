@@ -1,4 +1,4 @@
-# Common recent settings file for Wireshark 4.6.3.
+# Common recent settings file for Wireshark 4.6.4.
 #
 # This file is regenerated each time Wireshark is quit
 # and when changing configuration profile.
@@ -9,16 +9,26 @@
 recent.capture_file: /Users/joshuapozzolungo/Downloads/http-ethereal-trace-1
 recent.capture_file: /Users/joshuapozzolungo/Downloads/http-ethereal-trace-2
 recent.capture_file: /Users/joshuapozzolungo/Downloads/tcp-ethereal-trace-1
+recent.capture_file: /Users/joshuapozzolungo/Downloads/eetSubnet-1hr-Term3.pcap
+recent.capture_file: /Users/joshuapozzolungo/Downloads/30_second_ee_cs_bidir.pcap
+recent.capture_file: /Users/joshuapozzolungo/Downloads/1_minute_ee_cs_bidir.pcap
+recent.capture_file: /Users/joshuapozzolungo/Desktop/Cyber-Shield/w-1/web-servers/30_second_ee_cs_bidir.pcap
 
 ######## Recent capture filters (latest first), cannot be altered through command line ########
 
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
-recent.display_filter: icmp
-recent.display_filter: tcp
-recent.display_filter: tcp.analysis.retransmission
+recent.display_filter: tls
 recent.display_filter: http
+recent.display_filter: ip.dst == 129.94.172.19
+recent.display_filter: ip.src == 129.94.172.19
+recent.display_filter: ip.addr == 129.94.172.19
+recent.display_filter: ip.addr == 129.94.173.23
+recent.display_filter: ip.addr == 129.94.173.238
+recent.display_filter: udp
+recent.display_filter: ip.addr ==  129.94.173.159 
+recent.display_filter: tcp.port == 443
 
 # Main window geometry.
 # Decimal numbers.
@@ -111,6 +121,17 @@ gui.geom.PreferencesDialog.maximized: false
 # Qt Geometry State (hex byte string).
 gui.geom.PreferencesDialog.qt_geometry: 01d9d0cb00030000000000af000000e5000004320000032a000000af00000101000004320000032a000000000000000005be000000af00000101000004320000032a
 
+# Geometry and maximized state of PlotDialog window.
+# Decimal integers.
+gui.geom.PlotDialog.x: 0
+gui.geom.PlotDialog.y: 33
+gui.geom.PlotDialog.width: 1470
+gui.geom.PlotDialog.height: 923
+# true or false (case-insensitive).
+gui.geom.PlotDialog.maximized: true
+# Qt Geometry State (hex byte string).
+gui.geom.PlotDialog.qt_geometry: 01d9d0cb000300000000000000000021000005bd000003bb00000119000000a20000049100000321000000000004000005be0000000000000021000005bd000003bb
+
 # Geometry and maximized state of EnabledProtocolsDialog window.
 # Decimal integers.
 gui.geom.EnabledProtocolsDialog.x: 232
@@ -121,6 +142,17 @@ gui.geom.EnabledProtocolsDialog.height: 595
 gui.geom.EnabledProtocolsDialog.maximized: false
 # Qt Geometry State (hex byte string).
 gui.geom.EnabledProtocolsDialog.qt_geometry: 01d9d0cb00030000000000e80000009d000004c20000030b000000e8000000b9000004c20000030b000000000000000005be000000e8000000b9000004c20000030b
+
+# Geometry and maximized state of FilterDialog window.
+# Decimal integers.
+gui.geom.FilterDialog.x: 235
+gui.geom.FilterDialog.y: 147
+gui.geom.FilterDialog.width: 980
+gui.geom.FilterDialog.height: 615
+# true or false (case-insensitive).
+gui.geom.FilterDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.FilterDialog.qt_geometry: 01d9d0cb00030000000000eb00000093000004be00000315000000eb000000af000004be00000315000000000000000005be000000eb000000af000004be00000315
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.

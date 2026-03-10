@@ -29,12 +29,6 @@ keymap.set("n", "tw", ":tabclose<Return>", opts)
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
 
--- Move window
-keymap.set('n', '<C-h>', '<C-w>h', { desc = 'Move to left window' })
-keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Move to bottom window' })
-keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Move to top window' })
-keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move to right window' })
-
 -- Enter Normal Mode
 keymap.set("i", "jk", "<ESC>")
 
@@ -42,5 +36,9 @@ keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<C-S-h>", "<C-w><")
 keymap.set("n", "<C-S-l>", "<C-w>>")
 keymap.set("n", "<C-S-k>", "<C-w>+")
-keymap.set("n", "<C-S-j>", "<C-w>-") 
+keymap.set("n", "<C-S-j>", "<C-w>-")
+
+keymap.set('v', '<leader>p', ':PastifyAfter<CR>', { noremap = true, silent = true })
+keymap.set('n', '<leader>p', ':PastifyAfter<CR>', { noremap = true, silent = true })
+keymap.set('n', '<leader>P', ':Pastify<CR>', { noremap = true, silent = true })
 

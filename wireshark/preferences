@@ -1,4 +1,4 @@
-# Configuration file for Wireshark 4.6.0.
+# Configuration file for Wireshark 4.6.3.
 #
 # This file is regenerated each time preferences are saved within
 # Wireshark. Making manual changes should be safe, however.
@@ -208,7 +208,7 @@
 
 # Show the byte view in the packet details dialog
 # true or false (case-insensitive)
-gui.show_byteview_in_dialog: FALSE
+#gui.show_byteview_in_dialog: TRUE
 
 ####### User Interface: Colors ########
 
@@ -606,7 +606,7 @@ gui.qt.font_name: Menlo,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 # Remote capture filter
 # A string
-#extcap.ciscodump.remotefilter: deny tcp host fe80::7996:9856:7d45:e00c any eq 22, deny tcp any eq 22 host fe80::7996:9856:7d45:e00c, deny tcp host fe80::efce:5a0b:baa5:6bf1 any eq 22, deny tcp any eq 22 host fe80::efce:5a0b:baa5:6bf1, deny tcp host fe80::2c43:7c74:9b2e:d7b2 any eq 22, deny tcp any eq 22 host fe80::2c43:7c74:9b2e:d7b2, deny tcp host fe80::29df:583c:16fe:d96e any eq 22, deny tcp any eq 22 host fe80::29df:583c:16fe:d96e, deny tcp host fe80::ce81:b1c:bd2c:69e any eq 22, deny tcp any eq 22 host fe80::ce81:b1c:bd2c:69e, deny tcp host fe80::6f14:abd:5850:729f any eq 22, deny tcp any eq 22 host fe80::6f14:abd:5850:729f, deny tcp host fe80::7116:1e3e:1ad9:ceec any eq 22, deny tcp any eq 22 host fe80::7116:1e3e:1ad9:ceec, deny tcp host fe80::463f:b712:e040:dfed any eq 22, deny tcp any eq 22 host fe80::463f:b712:e040:dfed, deny tcp host fe80::2cf0:13ff:fe92:51b3 any eq 22, deny tcp any eq 22 host fe80::2cf0:13ff:fe92:51b3, deny tcp host fe80::2cf0:13ff:fe92:51b3 any eq 22, deny tcp any eq 22 host fe80::2cf0:13ff:fe92:51b3, deny tcp host 192.168.50.246 any eq 22, deny tcp any eq 22 host 192.168.50.246, deny tcp host fe80::47d:bab5:22a3:7f68 any eq 22, deny tcp any eq 22 host fe80::47d:bab5:22a3:7f68, deny tcp host fe80::1 any eq 22, deny tcp any eq 22 host fe80::1, permit ip any any
+#extcap.ciscodump.remotefilter: deny tcp host fe80::6bf1:7425:9f3b:4430 any eq 22, deny tcp any eq 22 host fe80::6bf1:7425:9f3b:4430, deny tcp host fe80::3653:9040:a093:9efe any eq 22, deny tcp any eq 22 host fe80::3653:9040:a093:9efe, deny tcp host fe80::ce81:b1c:bd2c:69e any eq 22, deny tcp any eq 22 host fe80::ce81:b1c:bd2c:69e, deny tcp host fe80::3a5e:2751:7535:1b5e any eq 22, deny tcp any eq 22 host fe80::3a5e:2751:7535:1b5e, deny tcp host fe80::d57c:b122:4678:e2ec any eq 22, deny tcp any eq 22 host fe80::d57c:b122:4678:e2ec, deny tcp host fe80::b235:3da3:ae9c:71cb any eq 22, deny tcp any eq 22 host fe80::b235:3da3:ae9c:71cb, deny tcp host fe80::54cc:adff:fe6d:e845 any eq 22, deny tcp any eq 22 host fe80::54cc:adff:fe6d:e845, deny tcp host fe80::54cc:adff:fe6d:e845 any eq 22, deny tcp any eq 22 host fe80::54cc:adff:fe6d:e845, deny tcp host 10.4.116.204 any eq 22, deny tcp any eq 22 host 10.4.116.204, deny tcp host fe80::cd4:8eb:c263:23af any eq 22, deny tcp any eq 22 host fe80::cd4:8eb:c263:23af, deny tcp host fe80::1 any eq 22, deny tcp any eq 22 host fe80::1, permit ip any any
 
 # Packets to capture
 # A string
@@ -694,7 +694,7 @@ gui.qt.font_name: Menlo,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 # Remote capture filter
 # A string
-#extcap.sshdump.remotefilter: not ((host fe80::7996:9856:7d45:e00c or host fe80::efce:5a0b:baa5:6bf1 or host fe80::2c43:7c74:9b2e:d7b2 or host fe80::29df:583c:16fe:d96e or host fe80::ce81:b1c:bd2c:69e or host fe80::6f14:abd:5850:729f or host fe80::7116:1e3e:1ad9:ceec or host fe80::463f:b712:e040:dfed or host fe80::2cf0:13ff:fe92:51b3 or host fe80::2cf0:13ff:fe92:51b3 or host 192.168.50.246 or host fe80::47d:bab5:22a3:7f68 or host fe80::1) and port 22)
+#extcap.sshdump.remotefilter: not ((host fe80::6bf1:7425:9f3b:4430 or host fe80::3653:9040:a093:9efe or host fe80::ce81:b1c:bd2c:69e or host fe80::3a5e:2751:7535:1b5e or host fe80::d57c:b122:4678:e2ec or host fe80::b235:3da3:ae9c:71cb or host fe80::54cc:adff:fe6d:e845 or host fe80::54cc:adff:fe6d:e845 or host 10.4.116.204 or host fe80::cd4:8eb:c263:23af or host fe80::1) and port 22)
 
 # Packets to capture
 # A string
