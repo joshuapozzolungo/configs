@@ -6,9 +6,7 @@ return {
     { "antosha417/nvim-lsp-file-operations", config = true },
   },
   config = function()
-    local cmp_nvim_lsp = require("cmp_nvim_lsp")
     local capabilities = cmp_nvim_lsp.default_capabilities()
-
     -- 1. Setup Keymaps (Modern Autocommand approach)
     vim.api.nvim_create_autocmd("LspAttach", {
       group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -119,7 +117,7 @@ return {
       },
     })
     vim.lsp.enable("lua_ls")
-
+  
     -- Tailwind (Restoring your custom filetypes)
     vim.lsp.config("tailwindcss", {
       options = {

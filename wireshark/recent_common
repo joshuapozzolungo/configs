@@ -20,15 +20,14 @@ recent.capture_file: /Users/joshuapozzolungo/Desktop/Cyber-Shield/w-1/web-server
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
 recent.display_filter: tls
-recent.display_filter: http
-recent.display_filter: ip.dst == 129.94.172.19
-recent.display_filter: ip.src == 129.94.172.19
-recent.display_filter: ip.addr == 129.94.172.19
-recent.display_filter: ip.addr == 129.94.173.23
-recent.display_filter: ip.addr == 129.94.173.238
-recent.display_filter: udp
-recent.display_filter: ip.addr ==  129.94.173.159 
-recent.display_filter: tcp.port == 443
+recent.display_filter: ipv6.addr 
+recent.display_filter: ip.src == 129.94.173.142
+recent.display_filter: ip.src == 129.94.175.76
+recent.display_filter: tls.handshake.type == 2
+recent.display_filter: tls 
+recent.display_filter: ip.src == 149.171.92.175
+recent.display_filter: ip.src == 129.94.174.115
+recent.display_filter: ip.src == 149.171.92.87
 
 # Main window geometry.
 # Decimal numbers.
@@ -110,17 +109,6 @@ gui.geom.ExpertInfoDialog.maximized: true
 # Qt Geometry State (hex byte string).
 gui.geom.ExpertInfoDialog.qt_geometry: 01d9d0cb000300000000000000000021000005bd000003bb0000011c0000003e0000048d000003bb000000000004000005be0000000000000021000005bd000003bb
 
-# Geometry and maximized state of PreferencesDialog window.
-# Decimal integers.
-gui.geom.PreferencesDialog.x: 175
-gui.geom.PreferencesDialog.y: 229
-gui.geom.PreferencesDialog.width: 900
-gui.geom.PreferencesDialog.height: 554
-# true or false (case-insensitive).
-gui.geom.PreferencesDialog.maximized: false
-# Qt Geometry State (hex byte string).
-gui.geom.PreferencesDialog.qt_geometry: 01d9d0cb00030000000000af000000e5000004320000032a000000af00000101000004320000032a000000000000000005be000000af00000101000004320000032a
-
 # Geometry and maximized state of PlotDialog window.
 # Decimal integers.
 gui.geom.PlotDialog.x: 0
@@ -132,17 +120,6 @@ gui.geom.PlotDialog.maximized: true
 # Qt Geometry State (hex byte string).
 gui.geom.PlotDialog.qt_geometry: 01d9d0cb000300000000000000000021000005bd000003bb00000119000000a20000049100000321000000000004000005be0000000000000021000005bd000003bb
 
-# Geometry and maximized state of EnabledProtocolsDialog window.
-# Decimal integers.
-gui.geom.EnabledProtocolsDialog.x: 232
-gui.geom.EnabledProtocolsDialog.y: 157
-gui.geom.EnabledProtocolsDialog.width: 987
-gui.geom.EnabledProtocolsDialog.height: 595
-# true or false (case-insensitive).
-gui.geom.EnabledProtocolsDialog.maximized: false
-# Qt Geometry State (hex byte string).
-gui.geom.EnabledProtocolsDialog.qt_geometry: 01d9d0cb00030000000000e80000009d000004c20000030b000000e8000000b9000004c20000030b000000000000000005be000000e8000000b9000004c20000030b
-
 # Geometry and maximized state of FilterDialog window.
 # Decimal integers.
 gui.geom.FilterDialog.x: 235
@@ -153,6 +130,39 @@ gui.geom.FilterDialog.height: 615
 gui.geom.FilterDialog.maximized: false
 # Qt Geometry State (hex byte string).
 gui.geom.FilterDialog.qt_geometry: 01d9d0cb00030000000000eb00000093000004be00000315000000eb000000af000004be00000315000000000000000005be000000eb000000af000004be00000315
+
+# Geometry and maximized state of PreferencesDialog window.
+# Decimal integers.
+gui.geom.PreferencesDialog.x: 175
+gui.geom.PreferencesDialog.y: 229
+gui.geom.PreferencesDialog.width: 900
+gui.geom.PreferencesDialog.height: 554
+# true or false (case-insensitive).
+gui.geom.PreferencesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PreferencesDialog.qt_geometry: 01d9d0cb00030000000000af000000e5000004320000032a000000af00000101000004320000032a000000000000000005be000000af00000101000004320000032a
+
+# Geometry and maximized state of FollowStreamDialog window.
+# Decimal integers.
+gui.geom.FollowStreamDialog.x: 0
+gui.geom.FollowStreamDialog.y: 33
+gui.geom.FollowStreamDialog.width: 1470
+gui.geom.FollowStreamDialog.height: 923
+# true or false (case-insensitive).
+gui.geom.FollowStreamDialog.maximized: true
+# Qt Geometry State (hex byte string).
+gui.geom.FollowStreamDialog.qt_geometry: 01d9d0cb000300000000000000000021000005bd000003bb000000eb0000003d000004be000003b9000000000004000005be0000000000000021000005bd000003bb
+
+# Geometry and maximized state of EnabledProtocolsDialog window.
+# Decimal integers.
+gui.geom.EnabledProtocolsDialog.x: 232
+gui.geom.EnabledProtocolsDialog.y: 157
+gui.geom.EnabledProtocolsDialog.width: 987
+gui.geom.EnabledProtocolsDialog.height: 595
+# true or false (case-insensitive).
+gui.geom.EnabledProtocolsDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.EnabledProtocolsDialog.qt_geometry: 01d9d0cb00030000000000e80000009d000004c20000030b000000e8000000b9000004c20000030b000000000000000005be000000e8000000b9000004c20000030b
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.
